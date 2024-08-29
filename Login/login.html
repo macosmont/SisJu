@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SisJu - Login e Cadastro</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Formulário de Login -->
+        <div class="form-container login">
+            <h2>Login</h2>
+            <label for="login-email">Email:</label>
+            <input type="email" id="login-email" placeholder="Digite seu e-mail">
+            <label for="login-senha">Senha:</label>
+            <input type="password" id="login-senha" placeholder="Digite sua senha">
+    
+            <button type="submit">Entrar</button>
+    
+            <div class="toggle">
+                <p>Não tem uma conta? <a href="#" id="toggleCadastro">Cadastre-se</a></p>
+            </div>
+        </div>
+    
+        <!-- Formulário de Cadastro -->
+        <div class="form-container cadastro hidden">
+            <h2>Cadastro</h2>
+            <label for="cadastro-nome">Nome:</label>
+            <input type="text" id="cadastro-nome" placeholder="Digite seu nome">
+    
+            <label for="cadastro-email">Email:</label>
+            <input type="email" id="cadastro-email" placeholder="Digite seu e-mail">
+    
+            <label for="cadastro-senha">Senha:</label>
+            <input type="password" id="cadastro-senha" placeholder="Digite sua senha">
+    
+            <label for="confirma-senha">Confirmar Senha:</label>
+            <input type="password" id="confirma-senha" placeholder="Confirme sua senha">
+    
+            <button type="submit" id="cadastrado">Cadastrar</button>
+    
+            <div class="toggle">
+                <p>Já tem uma conta? <a href="#" id="toggleLogin">Login</a></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+</body>
+</html>
